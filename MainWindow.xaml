@@ -1,0 +1,21 @@
+﻿<Window x:Name="frmBurger" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Weekly2"
+        mc:Ignorable="d"
+        Title="Burger Specials" Height="587" Width="800">
+    <Grid>
+        <Label x:Name="lblHeading" Content="Farm Burger Specials" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="picPrime" HorizontalAlignment="Left" Height="250" Margin="92,101,0,0" VerticalAlignment="Top" Width="260"/>
+        <Image x:Name="picVeggie" HorizontalAlignment="Left" Height="250" Margin="464,101,0,0" VerticalAlignment="Top" Width="260"/>
+        <Button x:Name="btnPrime" Content="Prime Beef" HorizontalAlignment="Left" Margin="147,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
+        <Button x:Name="btnSelectMeal" Content="Select Meal" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
+        <Button x:Name="btnVeggie" Content="Veggie" HorizontalAlignment="Left" Margin="529,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" RenderTransformOrigin="0.156,0.458"/>
+        <Label x:Name="lblInstructions" Content="Choose a burger and then click the Select Meal button" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="9"/>
+        <Label x:Name="lblConfirmation" Content="Enjoy your burger special" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="9"/>
+        <Button x:Name="btnExit" Content="Exit Window" HorizontalAlignment="Center" Margin="0,524,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
+
+    </Grid>
+</Window>
