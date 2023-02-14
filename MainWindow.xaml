@@ -6,16 +6,20 @@
         xmlns:local="clr-namespace:Weekly2"
         mc:Ignorable="d"
         Title="Burger Specials" Height="587" Width="800">
-    <Grid>
-        <Label x:Name="lblHeading" Content="Farm Burger Specials" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="picPrime" HorizontalAlignment="Left" Height="250" Margin="92,101,0,0" VerticalAlignment="Top" Width="260"/>
-        <Image x:Name="picVeggie" HorizontalAlignment="Left" Height="250" Margin="464,101,0,0" VerticalAlignment="Top" Width="260"/>
-        <Button x:Name="btnPrime" Content="Prime Beef" HorizontalAlignment="Left" Margin="147,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
-        <Button x:Name="btnSelectMeal" Content="Select Meal" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
-        <Button x:Name="btnVeggie" Content="Veggie" HorizontalAlignment="Left" Margin="529,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" RenderTransformOrigin="0.156,0.458"/>
+    <Grid Background="#FFEEF5D9">
+        <Label x:Name="lblHeading" Content="Farm Burger Specials" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontWeight="Bold" FontSize="16" Foreground="#FFD40000"/>
+        <Button x:Name="btnPrime" Content="Prime Beef" HorizontalAlignment="Left" Margin="147,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" Background="#FFEDEDAC" FontWeight="Bold"/>
+        <Button x:Name="btnSelectMeal" Content="Select Meal" HorizontalAlignment="Center" Margin="0,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" Background="#FFEDEDAC"/>
+        <Button x:Name="btnVeggie" Content="Veggie" HorizontalAlignment="Left" Margin="529,392,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" RenderTransformOrigin="0.156,0.458" Background="#FFEDEDAC" FontWeight="Bold"/>
         <Label x:Name="lblInstructions" Content="Choose a burger and then click the Select Meal button" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="9"/>
         <Label x:Name="lblConfirmation" Content="Enjoy your burger special" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" FontFamily="Tahoma" FontSize="9"/>
-        <Button x:Name="btnExit" Content="Exit Window" HorizontalAlignment="Center" Margin="0,524,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35"/>
+        <Button x:Name="btnExit" Content="Exit Window" HorizontalAlignment="Center" Margin="0,524,0,0" VerticalAlignment="Top" FontFamily="Tahoma" Width="128" Height="35" Background="#FFEDEDAC" IsEnabled="False"/>
+        <Image x:Name="picVeggie" HorizontalAlignment="Left" Height="250" Margin="464,101,0,0" VerticalAlignment="Top" Width="260" Source="/veggie.jpg" Stretch="Fill" Visibility="Hidden"/>
+        <Image x:Name="picPrime" HorizontalAlignment="Left" Height="250" Margin="92,101,0,0" VerticalAlignment="Top" Width="260" Source="/prime.jpg" Stretch="Fill" Visibility="Hidden">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/prime.jpg"/>
+            </Image.OpacityMask>
+        </Image>
 
     </Grid>
 </Window>
